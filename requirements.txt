@@ -1,0 +1,24 @@
+# Swimming Pool Detection with SAM 3
+# Python 3.12+ required
+#
+# Step 1: Install PyTorch with CUDA support FIRST (before this file):
+#   pip install torch==2.10.0 torchvision --index-url https://download.pytorch.org/whl/cu128
+#
+# Step 2: Install SAM 3 from source:
+#   git clone https://github.com/facebookresearch/sam3.git
+#   cd sam3 && pip install -e .
+#
+# Step 3: Install the remaining dependencies below:
+#   pip install -r requirements.txt
+
+# Image processing
+Pillow>=10.0.0
+
+# HuggingFace authentication (for downloading SAM 3 model weights)
+huggingface_hub>=0.23.0
+
+# Optional: faster inference (requires CUDA 12.8)
+# einops
+# ninja
+# flash-attn-3 (install separately: pip install flash-attn-3 --no-deps --index-url https://download.pytorch.org/whl/cu128)
+# cc_torch (install separately: pip install git+https://github.com/ronghanghu/cc_torch.git)
